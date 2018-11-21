@@ -1,0 +1,12 @@
+{
+  "name": "JsonAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts":{
+    "dev": "json-server db.json --routes routes.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "faker": "^4.1.0"
+  }
+}

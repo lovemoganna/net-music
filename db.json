@@ -1,0 +1,72 @@
+{
+  "data": {
+    "ret": true,
+    "data": {
+      "city": "北京",
+      "swiperList": [{
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1810/6e/4a5551bbb189d902.jpg_750x200_25257467.jpg"
+      }, {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/ce/77e115fea8f99102.jpg_750x200_a2d0fcd2.jpg"
+      }, {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/39/6b1f0402bb1d5902.jpg_750x200_3c7661d6.jpg"
+      }, {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1809/d4/e298dff35d3af802.jpg_750x200_9b0d56c1.jpg"
+      }, {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1810/af/30ffcf34e9819f02.jpg_750x200_736b7236.jpg"
+      }, {
+        "id": "0006",
+        "imgUrl": " http://img1.qunarzz.com/piao/fusion/1806/1c/4847ea66072c7b02.jpg_750x200_c32457fb.jpg"
+      }],
+      "recommedList": [{
+          "id": "0001",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+          "title": "北京欢乐谷",
+          "star": "5",
+          "commentNumber": "64925",
+          "price": "120",
+          "desc": "亚洲唯一飞行式过山车等你来挑战"
+        }, {
+          "id": "0002",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg",
+          "title": "八达岭长城",
+          "star": "5",
+          "commentNumber": "42726",
+          "price": "15735",
+          "desc": "不到长城非好汉"
+        }, {
+          "id": "0003",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg",
+          "title": "西山温泉",
+          "star": "5",
+          "commentNumber": "275",
+          "price": "248",
+          "desc": "完美演绎京城汤泉的独有魅力"
+        }, {
+          "id": "0004",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+          "title": "北京欢乐谷",
+          "star": "5",
+          "commentNumber": "64925",
+          "price": "120",
+          "desc": "亚洲唯一飞行式过山车等你来挑战"
+        },
+        {
+          "id": "0005",
+          "imgUrl": "http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+          "title": "北京欢乐谷",
+          "star": "5",
+          "commentNumber": "64925",
+          "price": "120",
+          "desc": "亚洲唯一飞行式过山车等你来挑战"
+        },
+
+      ]
+
+    }
+  }
+}
