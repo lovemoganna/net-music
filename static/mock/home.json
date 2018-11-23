@@ -1,0 +1,166 @@
+{
+  "data": {
+    "ret": true,
+    "data": {
+      "city": "北京",
+      "swiperList": [
+        {
+          "id": "0001",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1810/6e/4a5551bbb189d902.jpg_750x200_25257467.jpg"
+        },
+        {
+          "id": "0002",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/ce/77e115fea8f99102.jpg_750x200_a2d0fcd2.jpg"
+        },
+        {
+          "id": "0003",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/39/6b1f0402bb1d5902.jpg_750x200_3c7661d6.jpg"
+        },
+        {
+          "id": "0004",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1809/d4/e298dff35d3af802.jpg_750x200_9b0d56c1.jpg"
+        },
+        {
+          "id": "0005",
+          "imgUrl": "http://img1.qunarzz.com/piao/fusion/1810/af/30ffcf34e9819f02.jpg_750x200_736b7236.jpg"
+        },
+        {
+          "id": "0006",
+          "imgUrl": " http://img1.qunarzz.com/piao/fusion/1806/1c/4847ea66072c7b02.jpg_750x200_c32457fb.jpg"
+        }
+      ],
+      "recommendList": [
+        {
+          "id": "0001",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg",
+          "title": "八达岭长城",
+          "star": "4.9",
+          "commentNumber": "42797",
+          "price": "157.5",
+          "address": "延庆县",
+          "desc": "不到长城非好汉"
+        },
+        {
+          "id": "0002",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg",
+          "title": "西山温泉",
+          "star": "4.9",
+          "commentNumber": "275",
+          "price": "218",
+          "address": "海淀区",
+          "desc": "亚洲唯一飞行式过山车等你来挑战"
+        },
+        {
+          "id": "0003",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1709/e4/e48857f2ce5e53a7a3.img.jpg_200x200_8ee069fe.jpg",
+          "title": "远去的恐龙",
+          "star": "5.0",
+          "commentNumber": "613",
+          "price": "150",
+          "address": "朝阳区",
+          "desc": "中国现存最大的皇家园林"
+        },
+        {
+          "id": "0004",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1601/6c/6cf2f668c00ec54190.water.jpg_200x200_e7e22494.jpg",
+          "title": "龙熙温泉",
+          "star": "4.7",
+          "commentNumber": "327",
+          "price": "206.9",
+          "address": "大兴区",
+          "desc": "一万平米阳光海岸温泉水世界"
+        },
+        {
+          "id": "0005",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1511/a5/a57e18e2084ec48190.water.jpg_200x200_60287f5d.jpg",
+          "title": "温都水城",
+          "star": "4.7",
+          "commentNumber": "1328",
+          "price": "126",
+          "address": "昌平区",
+          "desc": "走进那个画中的小镇"
+        },
+        {
+          "id": "0006",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1510/8e/8eea8eb6f41698290.img.jpg_200x200_595cfa1d.jpg",
+          "title": "金隅凤山温泉",
+          "star": "4.8",
+          "commentNumber": "549",
+          "price": "248",
+          "address": "昌平区",
+          "desc": "听说能遇到杰伦哟"
+        },
+        {
+          "id": "0007",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg",
+          "title": "北京野生动物园",
+          "star": "4.9",
+          "commentNumber": "17561",
+          "price": "71",
+          "address": "大兴区",
+          "desc": "敢与森林之王近距离接触吗？"
+        },
+        {
+          "id": "0008",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1608/5c/5c30160572493ba9a3.water.jpg_200x200_8ded77a0.jpg",
+          "title": "北京乐多港奇幻乐园",
+          "star": "4.9",
+          "commentNumber": "856",
+          "price": "199",
+          "address": "昌平区",
+          "desc": "中国温泉之乡给你“帝王”的享受"
+        },
+        {
+          "id": "0009",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1602/68/68aa05adb5315f9990.water.jpg_200x200_ce3d2658.jpg",
+          "title": "北京海洋馆",
+          "star": "4.9",
+          "commentNumber": "4294",
+          "price": "85",
+          "address": "西城区",
+          "desc": "👍小伙伴们都收藏了，去看看吧~"
+        },
+        {
+          "id": "0010",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1602/67/67feeab24cfc82bb90.water.jpg_200x200_af2a01b1.jpg",
+          "title": "太平洋海底世界",
+          "star": "4.8",
+          "commentNumber": "3226",
+          "price": "68",
+          "address": "海淀区",
+          "desc": "温泉与水世界，沐浴与戏水的有趣结合"
+        },
+        {
+          "id": "0011",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg",
+          "title": "北京动物园",
+          "star": "4.9",
+          "commentNumber": "6676",
+          "price": "85",
+          "address": "西城区",
+          "desc": "40个国家的109处著名古迹名胜微缩景点"
+        },
+        {
+          "id": "0012",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1510/3e/3e8e30a6ff5d1cb090.water.jpg_200x200_ec6ab319.jpg",
+          "title": "古北水镇天然温泉",
+          "star": "4.9",
+          "commentNumber": "586",
+          "price": "140",
+          "address": "古北水镇",
+          "desc": "世界五大宫之首，穿越与您近在咫尺"
+        },
+        {
+          "id": "0013",
+          "imgURL": "http://img1.qunarzz.com/sight/p0/1505/8d/8d1f6d86b2c5926e.water.jpg_200x200_3235712b.jpg",
+          "title": "北京大观园",
+          "star": "4.8",
+          "commentNumber": "2105",
+          "price": "33.3",
+          "address": "西城区",
+          "desc": "全世界第一大广场"
+        }
+      ]
+    }
+  }
+}
