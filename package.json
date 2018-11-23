@@ -2,7 +2,7 @@
   "name": "JsonAPI",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts":{
+  "scripts": {
     "dev": "json-server db.json --routes routes.json"
   },
   "license": "MIT",
