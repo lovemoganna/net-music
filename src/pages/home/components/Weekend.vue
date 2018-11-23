@@ -2,44 +2,18 @@
   .weekend-title
     .title 周末去哪玩
     ul
-      li.item.border-bottom(v-for="item of recommendList" :keys="item.id")
+      li.item.border-bottom(v-for="item of list" :keys="item.id")
         .item-img-wrapper
-          img.item-img(:src="item.imgUrl")
+          img.item-img(:src="item.img_url")
         .item-info
-          p.item-title {{item.title}}
-          p.item-desc {{item.desc}}
+          p.item-title {{item.product_name}}
+          p.item-desc {{item.product_desc}}
 </template>
 <script type="text/ecmascript-6">
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-        title: '外地人的放松时光',
-        desc: '放松放松好工作,高高兴兴挣大钱!'
-      },
-      {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-        title: '外地人的放松时光',
-        desc: '放松放松好工作,高高兴兴挣大钱!'
-      },
-      {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-        title: '外地人的放松时光',
-        desc: '放松放松好工作,高高兴兴挣大钱!'
-      },
-      {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-        title: '外地人的放松时光',
-        desc: '放松放松好工作,高高兴兴挣大钱!'
-      }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
@@ -48,7 +22,6 @@ export default {
   .title {
     line-height: .8rem;
     background: #eee;
-    margin-top: .15rem;
     text-indent: .2rem;
   }
   .item-img-wrapper{

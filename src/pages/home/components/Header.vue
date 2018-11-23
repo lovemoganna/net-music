@@ -5,12 +5,15 @@
     .header-input
       span.iconfont.icon-search &#xe651;
       span.input-text 你想去的地方
-    .header-right 城市
+    .header-right {{this.city}}
       span.iconfont.icon-arrow &#xe65e;
 </template>
 <script type="text/ecmascript-6">
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -43,6 +46,9 @@ export default {
       background: #fff;
       border-radius: .1rem;
       color: #ccc;
+      .input-text{
+        padding-left: .1rem;
+      }
     }
     .header-right {
       width: 1.24rem;

@@ -1,9 +1,9 @@
 <template lang="pug">
   .recommend-title
     .title 热销推荐
-    ul
-      li.item.border-bottom(v-for="item of recommendList" :keys="item.id")
-        img.item-img(:src="item.imgUrl")
+    ul(v-if="showRecommend")
+      li.item.border-bottom(v-for="item of list" :keys="item.id")
+        img.item-img(:src="item.imgURL")
         .item-info
           p.item-title {{item.title}}
           p.item-desc {{item.desc}}
@@ -12,24 +12,17 @@
 <script type="text/ecmascript-6">
 export default {
   name: 'HomeRecommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-        title: '北京欢乐谷',
-        desc: '北京欢乐谷好玩好玩北京欢乐谷'
-      }, {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-        title: '北京欢乐谷',
-        desc: '北京欢乐谷好玩好玩北京欢乐谷'
-      }, {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-        title: '北京欢乐谷',
-        desc: '北京欢乐谷好玩好玩北京欢乐谷'
-      }]
+    }
+  },
+  computed: {
+    showRecommend () {
+      // default false
+      return this.list.length
     }
   }
 }
@@ -43,7 +36,6 @@ export default {
     margin-top: .15rem;
     text-indent: .2rem;
   }
-
   .item {
     overflow: hidden;
     display: flex;
