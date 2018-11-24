@@ -4,9 +4,10 @@
       .iconfont.icon-back &#xe660;
     .header-input
       span.iconfont.icon-search &#xe651;
-      span.input-text 你想去的地方
-    .header-right {{this.city}}
-      span.iconfont.icon-arrow &#xe65e;
+      span.input-text 你想去的任何地方
+    router-link(to="./city")
+      .header-right {{this.city}}
+        span.iconfont.icon-arrow &#xe65e;
 </template>
 <script type="text/ecmascript-6">
 export default {
@@ -21,7 +22,7 @@ export default {
 
   .header {
     display: flex;
-    line-height: .86rem;
+    line-height: $headerHeight;
     background: $bgColor;
     color: #fff;
     text-align: center;
@@ -30,7 +31,7 @@ export default {
       float: left;
       .icon-back{
         text-align: center;
-        font-size: .4rem;
+        font-size: .3rem;
       }
     }
     .header-input {
@@ -53,6 +54,7 @@ export default {
     .header-right {
       width: 1.24rem;
       float: right;
+      color: #fff;
       .icon-arrow{
         margin-left: .1rem;
         font-size: .24rem;
