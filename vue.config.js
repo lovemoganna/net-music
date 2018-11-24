@@ -14,7 +14,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000/api/',
+        target: 'https://hdbk.site/api/',
         changeOrigin: true,
         ws: true,
         pathRewrite: {
