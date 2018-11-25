@@ -9,57 +9,22 @@
       .area
         .title.border-topbottom 热门城市
         .button-list
-          .button-wrapper
-            .btn 北京
-          .button-wrapper
-            .btn 北京
-          .button-wrapper
-            .btn 北京
-          .button-wrapper
-            .btn 北京
-      .area
-        .title.border-topbottom A
-        ul.item-list
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-        .title.border-topbottom A
-        ul.item-list
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-        .title.border-topbottom A
-        ul.item-list
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-        .title.border-topbottom A
-        ul.item-list
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
-          li.item.border-bottom 阿拉尔
+          .button-wrapper(v-for="item of hot" :key="item.id")
+            .btn {{item.name}}
+      .area(v-for="(item , key) of cities" :key="key")
+        .title.border-topbottom {{key}}
+        ul.item-list(v-for="innerItem of item" :key="innerItem.id")
+          li.item.border-bottom {{innerItem.name}}
 
 </template>
 <script type="text/ecmascript-6">
 import Bscroll from 'better-scroll'
 export default {
   name: 'CityList',
+  props: {
+    hot: Array,
+    cities: Object
+  },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
   }

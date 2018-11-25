@@ -1,16 +1,14 @@
 <template lang="pug">
   ul.list
-    li.item A
-    li.item A
-    li.item A
-    li.item A
-    li.item A
-    li.item A
+    li.item(v-for="(item,key) of cities" :key="item.key") {{key}}
 
 </template>
 <script type="text/ecmascript-6">
 export default {
-  name: 'CityAlphabet'
+  name: 'CityAlphabet',
+  props: {
+    cities: Object
+  }
 }
 </script>
 <style lang="scss" scoped>
