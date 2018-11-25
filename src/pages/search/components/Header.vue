@@ -45,6 +45,8 @@ export default {
         min-width: 100%;
         background: #f2f2f2;
         text-align: center;
+        height: .36rem;
+        line-height: .36rem;
         padding: .1rem 0;
         background: #f2f2f2;
         border: 0;

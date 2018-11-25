@@ -1,0 +1,124 @@
+<template lang="pug">
+  .city-list(ref="wrapper")
+    div
+      .area
+        .title.border-topbottom 当前城市
+        .button-list
+          .button-wrapper
+            .btn 北京
+      .area
+        .title.border-topbottom 热门城市
+        .button-list
+          .button-wrapper
+            .btn 北京
+          .button-wrapper
+            .btn 北京
+          .button-wrapper
+            .btn 北京
+          .button-wrapper
+            .btn 北京
+      .area
+        .title.border-topbottom A
+        ul.item-list
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+        .title.border-topbottom A
+        ul.item-list
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+        .title.border-topbottom A
+        ul.item-list
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+        .title.border-topbottom A
+        ul.item-list
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+          li.item.border-bottom 阿拉尔
+
+</template>
+<script type="text/ecmascript-6">
+import Bscroll from 'better-scroll'
+export default {
+  name: 'CityList',
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
+  }
+}
+</script>
+<style lang="scss" scoped>
+  .border-topbottom {
+    &:before {
+      border-color: #777;
+    }
+    &:after {
+      border-color: #777;
+    }
+  }
+
+  .border-bottom {
+    &:before {
+      border-color: #777;
+    }
+    &:after {
+      border-color: #777;
+    }
+  }
+
+  .city-list {
+    position: absolute;
+    overflow: hidden;
+    top: 1.68rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .title {
+      line-height: .54rem;
+      background: #eee;
+      padding-left: .2rem;
+      color: #666;
+    }
+    .button-list {
+      overflow: hidden;
+      padding: .1rem .6rem .1rem .1rem;
+      .button-wrapper {
+        float: left;
+        width: 33.33%;
+        .btn {
+          margin: .1rem;
+          padding: .1rem 0;
+          text-align: center;
+          border: .02rem solid #ccc;
+          border-radius: .06rem;
+        }
+      }
+    }
+
+    .item-list {
+      .item {
+        line-height: .76rem;
+        color: #666;
+        padding-left: .2rem;
+      }
+    }
+  }
+</style>
