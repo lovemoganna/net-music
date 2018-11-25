@@ -3,10 +3,11 @@
     .header-left
       .iconfont.icon-back &#xe660;
     .header-input
-      span.iconfont.icon-search &#xe651;
-      span.input-text 你想去的任何地方
-    router-link(to="./city")
-      .header-right {{this.city}}
+      router-link(to="./search")
+        span.iconfont.icon-search &#xe651;
+        span.input-text 输入城市/景点/游玩主题
+    .header-right {{this.city}}
+      router-link(to="./city")
         span.iconfont.icon-arrow &#xe65e;
 </template>
 <script type="text/ecmascript-6">
@@ -31,7 +32,7 @@ export default {
       float: left;
       .icon-back{
         text-align: center;
-        font-size: .3rem;
+        font-size: .36rem;
       }
     }
     .header-input {
@@ -47,8 +48,12 @@ export default {
       background: #fff;
       border-radius: .1rem;
       color: #ccc;
+      .icon-search{
+        color: #e4e7ea;
+      }
       .input-text{
         padding-left: .1rem;
+        color: #e4e7ea;
       }
     }
     .header-right {
@@ -58,6 +63,7 @@ export default {
       .icon-arrow{
         margin-left: .1rem;
         font-size: .24rem;
+        color: #fff;
       }
     }
 

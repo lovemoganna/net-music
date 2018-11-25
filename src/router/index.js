@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home/Home'
 import City from '@/pages/city/City'
+import Search from '@/pages/search/Search'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
       path: '/city',
       name: 'city',
       component: City
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: Search
     }
   ]
 })
