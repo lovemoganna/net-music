@@ -5,20 +5,21 @@
         .title.border-topbottom 当前城市
         .button-list
           .button-wrapper
-            .btn 北京
+            .btn {{this.currentCity}}
       .area
         .title.border-topbottom 热门城市
         .button-list
-          .button-wrapper(v-for="item of hot" :key="item.id")
+          .button-wrapper(v-for="item of hot" :key="item.id" @click="handleCityClick(item.name)")
             .btn {{item.name}}
       .area(v-for="(item , key) of cities" :key="key" :ref="key")
         .title.border-topbottom {{key}}
-        ul.item-list(v-for="innerItem of item" :key="innerItem.id")
+        ul.item-list(v-for="innerItem of item" :key="innerItem.id" @click="handleCityClick(innerItem.name)")
           li.item.border-bottom {{innerItem.name}}
 
 </template>
 <script type="text/ecmascript-6">
 import Bscroll from 'better-scroll'
+import { mapState, mapMutations } from 'vuex'
 export default {
   name: 'CityList',
   props: {
@@ -26,8 +27,24 @@ export default {
     cities: Object,
     letter: String
   },
+  computed: {
+    ...mapState({
+      currentCity: 'city'
+    })
+  },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
+  },
+  methods: {
+    handleCityClick (name) {
+      // 使用dispatch 来调用vuex中的actions
+      // 需要我们将changeCity添加到store中
+      // this.$store.commit('changeCity', name)
+      this.changeCity(name)
+      this.$router.push('./')
+    },
+    // 现在有一个mutation叫changeCity,现在将changeCity映射到这个组件当中.
+    ...mapMutations(['changeCity'])
   },
   watch: {
     letter () {
