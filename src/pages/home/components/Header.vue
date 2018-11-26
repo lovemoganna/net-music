@@ -6,7 +6,7 @@
       span.iconfont.icon-search &#xe651;
       span.input-text 输入城市/景点/游玩主题
     router-link(to="./city")
-      .header-right {{this.doubleCity}}
+      .header-right {{this.city}}
         span.iconfont.icon-arrow &#xe65e;
 </template>
 <script type="text/ecmascript-6">

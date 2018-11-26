@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <div id="nav">
-    </div>
-    <router-view/>
+    <!--显示路由对应的内容-->
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
