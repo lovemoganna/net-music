@@ -11,7 +11,7 @@
         .button-list
           .button-wrapper(v-for="item of hot" :key="item.id")
             .btn {{item.name}}
-      .area(v-for="(item , key) of cities" :key="key")
+      .area(v-for="(item , key) of cities" :key="key" :ref="key")
         .title.border-topbottom {{key}}
         ul.item-list(v-for="innerItem of item" :key="innerItem.id")
           li.item.border-bottom {{innerItem.name}}
@@ -23,10 +23,19 @@ export default {
   name: 'CityList',
   props: {
     hot: Array,
-    cities: Object
+    cities: Object,
+    letter: String
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
+  },
+  watch: {
+    letter () {
+      if (this.letter) {
+        const elem = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(elem)
+      }
+    }
   }
 }
 </script>
@@ -61,6 +70,7 @@ export default {
       background: #eee;
       padding-left: .2rem;
       color: #666;
+      font-size: .36rem;
     }
     .button-list {
       overflow: hidden;

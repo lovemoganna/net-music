@@ -2,8 +2,8 @@
   .city-container
     city-header
     city-search
-    city-list(:cities="cities" :hot="hotCities")
-    city-alphabet(:cities="cities")
+    city-list(:cities="cities" :hot="hotCities" :letter="letter")
+    city-alphabet(:cities="cities" @change="handleLetterChange")
 </template>
 <script type="text/ecmascript-6">
 import CityHeader from './components/Header'
@@ -22,7 +22,8 @@ export default {
   data () {
     return {
       cities: {},
-      hotCities: []
+      hotCities: [],
+      letter: ''
     }
   },
   methods: {
@@ -37,6 +38,9 @@ export default {
         this.cities = data.cities
         this.hotCities = data.hotCities
       }
+    },
+    handleLetterChange (letter) {
+      this.letter = letter
     }
   },
   mounted () {
