@@ -3,18 +3,19 @@
     .header-left
       .iconfont.icon-back &#xe660;
     .header-input
-      router-link(to="./search")
-        span.iconfont.icon-search &#xe651;
-        span.input-text 输入城市/景点/游玩主题
-    .header-right {{this.city}}
-      router-link(to="./city")
+      span.iconfont.icon-search &#xe651;
+      span.input-text 输入城市/景点/游玩主题
+    router-link(to="./city")
+      .header-right {{this.doubleCity}}
         span.iconfont.icon-arrow &#xe65e;
 </template>
 <script type="text/ecmascript-6">
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
-  props: {
-    city: String
+  computed: {
+    // 将 city这个公用数据,映射到名字叫做city的计算属性当中
+    ...mapState(['city'])
   }
 }
 </script>
@@ -57,7 +58,8 @@ export default {
       }
     }
     .header-right {
-      width: 1.24rem;
+      min-width: 1.04rem;
+      padding: 0 .1rem;
       float: right;
       color: #fff;
       .icon-arrow{
