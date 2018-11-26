@@ -42,19 +42,19 @@ export default {
 <style lang="scss" scoped>
   .border-topbottom {
     &:before {
-      border-color: #777;
+      border-color: #eee;
     }
     &:after {
-      border-color: #777;
+      border-color: #eee;
     }
   }
 
   .border-bottom {
     &:before {
-      border-color: #777;
+      border-color: #eee;
     }
     &:after {
-      border-color: #777;
+      border-color: #eee;
     }
   }
 
@@ -70,7 +70,7 @@ export default {
       background: #eee;
       padding-left: .2rem;
       color: #666;
-      font-size: .36rem;
+      font-size: .3rem;
     }
     .button-list {
       overflow: hidden;
