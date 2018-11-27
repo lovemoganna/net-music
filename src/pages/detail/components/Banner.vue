@@ -1,16 +1,14 @@
 <template lang="pug">
- .container
-  .banner
-    img.banner-img(:src="imgs[0]" @click="handleClickImg")
-    .banner-bar
-      .banner-icons
-        span.iconfont.banner-icon &#xe736;
-        e.banner-icon-number {{imgs.length}}
+  .banner-container
+    .banner
+      img.banner-img(:src="imgs[0]" @click="handleClickImg")
       .banner-info
-        .banner-title 故宫(AAAAA景区)
-    .banner-back
-      span.iconfont.banner-icon-back &#xe660;
-  common-gallary(:imgs="imgs" v-show="showGallary" @close="handleCloseGallary")
+        .banner-icons
+          span.iconfont.banner-icon &#xe736;
+          e.banner-icon-number {{imgs.length}}
+        .banner-title-wrapper
+          .banner-title 故宫(AAAAA景区)
+    common-gallary(:imgs="imgs" v-show="showGallary" @close="handleCloseGallary")
 </template>
 <script type="text/ecmascript-6">
 import CommonGallary from 'common/gallary/Gallary'
@@ -45,7 +43,7 @@ export default {
     .banner-img {
       width: 100%;
     }
-    .banner-bar {
+    .banner-info {
       position: absolute;
       left: 0;
       right: 0;
@@ -62,7 +60,7 @@ export default {
         color: #fff;
         text-align: center;
         font-size: .24rem;
-        background-image: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,0.8));
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
         .banner-icon {
           margin-right: .1rem;
           font-size: .24rem;
@@ -71,30 +69,13 @@ export default {
           margin-left: .1rem;
         }
       }
-      .banner-info {
+      .banner-title-wrapper {
         .banner-title {
           margin-left: .2rem;
           color: #fff;
           font-size: .36rem;
           text-shadow: 0 1px 2px rgba(0, 0, 0, 0.70);
         }
-      }
-    }
-    .banner-back{
-      position: absolute;
-      top: .1rem;
-      left: .1rem;
-      width: .72rem;
-      height: .72rem;
-      line-height: .72rem;
-      background: rgba(0, 0, 0, 0.66);
-      border-radius: .45rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .banner-icon-back{
-        font-size: .36rem;
-        color: #ffffff;
       }
     }
   }
