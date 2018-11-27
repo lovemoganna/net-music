@@ -1,14 +1,14 @@
 <template lang="pug">
-  .search-container
-    search-header
+  .detail-container
+    detail-banner
 </template>
 <script type="text/ecmascript-6">
-import SearchHeader from './components/Header'
+import DetailBanner from './components/Banner'
 
 export default {
-  name: 'Search',
+  name: 'Detail',
   components: {
-    SearchHeader
+    DetailBanner
   }
 }
 </script>
