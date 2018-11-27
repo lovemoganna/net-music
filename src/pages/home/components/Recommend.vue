@@ -1,8 +1,8 @@
 <template lang="pug">
-  .recommend-title
+  .recommend-container
     .title 热销推荐
-    ul(v-if="showRecommend")
-      li.item.border-bottom(v-for="item of list" :keys="item.id")
+    ul
+      router-link.item.border-bottom(v-for="item of list" :keys="item.id" tag="li" :to="'./detail/'+ item.id")
         img.item-img(:src="item.imgURL")
         .item-info
           p.item-title {{item.title}}
@@ -14,16 +14,6 @@ export default {
   name: 'HomeRecommend',
   props: {
     list: Array
-  },
-  data () {
-    return {
-    }
-  },
-  computed: {
-    showRecommend () {
-      // default false
-      return this.list.length
-    }
   }
 }
 </script>
