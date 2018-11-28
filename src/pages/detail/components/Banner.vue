@@ -8,10 +8,12 @@
           e.banner-icon-number {{gallaryImgs.length}}
         .banner-title-wrapper
           .banner-title {{sightName}}
-    common-gallary(:imgs="gallaryImgs" v-show="showGallary" @close="handleCloseGallary")
+    fade
+      common-gallary(:imgs="gallaryImgs" v-show="showGallary" @close="handleCloseGallary")
 </template>
 <script type="text/ecmascript-6">
 import CommonGallary from 'common/gallary/Gallary'
+import Fade from 'common/fade/FadeAnimation'
 
 export default {
   name: 'DetailBanner',
@@ -21,7 +23,8 @@ export default {
     gallaryImgs: Array
   },
   components: {
-    CommonGallary
+    CommonGallary,
+    Fade
   },
   data () {
     return {
