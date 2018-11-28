@@ -1,27 +1,4 @@
-## 项目介绍
-仿写去哪儿网站
-
-## 工作流
-- github  
-- git flow 
-- commendizen 
-
-## 工作环境
-node-version: 10.11.0
-vue-cli: 3.1.3
-yarn: 1.12.3
-
-## Mock Server
-
-Json-Server RESTAPI environment build in centos
-
-## ajax
-
-axios
-
-## 项目模板页面
-- Home 
-- City
+## 页面开发日志
 
 ### Home Page Components  
 - add header 
@@ -32,11 +9,16 @@ axios
 
 ### City Page Components  
 - add header  
-- add search (search well done) 
+- add search 搜索城市 
 - add city list (use better-scroll plugin)
-- add Alphabet notes (achieve finger touch)
+- add Alphabet notes (滑动选择字母对应的城市)
+
+### Detail Page Components 
+- header(动画效果)
+- Banner(照片墙展示)
 
 DONE new feature: use Vuex achieve the HOME-Header component && City-List component && City-Search component data linkage
 
- 
+### Common Components 
+
 
