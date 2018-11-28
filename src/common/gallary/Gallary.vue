@@ -1,5 +1,5 @@
 <template>
-  <div class="container" @click="handleGallaryClick">
+  <div class="gallary-container" @click="handleGallaryClick">
     <div class="wrapper">
       <swiper :options="swiperOption">
         <!-- slides -->
@@ -47,8 +47,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  .container {
+  .gallary-container {
     position: fixed;
+    z-index: 99;
     left: 0;
     right: 0;
     top: 0;

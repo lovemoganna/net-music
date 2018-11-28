@@ -12,18 +12,26 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: Home
     },
     {
       path: '/city',
-      name: 'city',
+      name: 'City',
       component: City
     },
     {
       path: '/detail/:id',
-      name: 'detail',
+      name: 'Detail',
       component: Detail
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        // 每次路由切换的时候,x轴和y轴的值都是0.
+        resolve({ x: 0, y: 0 })
+      }, 500)
+    })
+  }
 })

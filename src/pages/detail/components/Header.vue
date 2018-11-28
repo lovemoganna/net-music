@@ -5,7 +5,7 @@
         span.iconfont.banner-icon-back &#xe660;
     .header-fixed(v-show="!showAbs" :style="opacityStyle") 故宫
       router-link.iconfont.header-fixed-back(tag="div" to="/") &#xe660;
-    .content
+
 </template>
 <script type="text/ecmascript-6">
 export default {
@@ -63,6 +63,7 @@ export default {
 
   .header-fixed {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
@@ -81,9 +82,5 @@ export default {
       color: #fff;
       font-size: .36rem;
     }
-  }
-
-  .content {
-    height: 40rem;
   }
 </style>
