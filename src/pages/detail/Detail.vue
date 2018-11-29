@@ -2,12 +2,18 @@
   .detail-container
     detail-banner(:bannerImg="bannerImg" :sightName="sightName" :gallaryImgs="gallaryImgs")
     detail-header
-    detail-list(:list="categoryList")
+    detail-base
+    detail-tip
+    detail-recommend
+    <!--detail-list(:list="categoryList")-->
 </template>
 <script type="text/ecmascript-6">
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
-import DetailList from './components/List'
+// import DetailList from './components/List'
+import DetailBase from './components/Base'
+import DetailTip from './components/Tip'
+import DetailRecommend from './components/Recommend'
 import axios from 'axios'
 
 export default {
@@ -15,7 +21,9 @@ export default {
   components: {
     DetailBanner,
     DetailHeader,
-    DetailList
+    DetailBase,
+    DetailTip,
+    DetailRecommend
   },
   data () {
     return {

@@ -1,11 +1,11 @@
 <template lang="pug">
   .banner-container
     .banner
-      img.banner-img(:src="bannerImg" @click="handleClickImg")
+      img.banner-img(src="https://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg" @click="handleClickImg")
       .banner-info
         .banner-icons
           span.iconfont.banner-icon &#xe736;
-          e.banner-icon-number {{gallaryImgs.length}}
+          em.banner-icon-number {{gallaryImgs.length}}
         .banner-title-wrapper
           .banner-title {{sightName}}
     fade
@@ -18,7 +18,7 @@ import Fade from 'common/fade/FadeAnimation'
 export default {
   name: 'DetailBanner',
   props: {
-    bannerImg: String,
+    // bannerImg: String,
     sightName: String,
     gallaryImgs: Array
   },
@@ -46,8 +46,10 @@ export default {
     position: relative;
     overflow: hidden;
     height: 0;
+    width: 100%;
     padding-bottom: 55%;
     .banner-img {
+      display: block;
       width: 100%;
     }
     .banner-info {
