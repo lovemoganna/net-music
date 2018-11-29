@@ -44,8 +44,8 @@ export default {
 
   .banner-back {
     position: absolute;
-    top: .2rem;
-    left: .2rem;
+    top: .1rem;
+    left: .1rem;
     width: .8rem;
     height: .8rem;
     line-height: .8rem;
