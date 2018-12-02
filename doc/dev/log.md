@@ -1,4 +1,4 @@
-## 页面开发日志
+## 页面开发日志 & 功能开发
 
 ### Home Page Components  
 - add header 
@@ -20,5 +20,13 @@
 DONE new feature: use Vuex achieve the HOME-Header component && City-List component && City-Search component data linkage
 
 ### Common Components 
+- gallary(画廊)
+- FadeAnimation(渐入渐出效果)
+
+### v-chart & echart的使用
+
+百度地图 + echart
+
+
 
 

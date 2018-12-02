@@ -5,7 +5,6 @@
         span.iconfont.banner-icon-back &#xe660;
     .header-fixed(v-show="!showAbs" :style="opacityStyle") 故宫
       router-link.iconfont.header-fixed-back(tag="div" to="/") &#xe660;
-
 </template>
 <script type="text/ecmascript-6">
 export default {

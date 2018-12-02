@@ -17,14 +17,32 @@
           .base-right-open
             span.base-open 开放时间、贴士
             span.iconfont.base-icon-enter &#xea6c;
-      .base-location.border-bottom
+      .base-location.border-bottom(@click="handleEnterMap")
         .base-location-icon.iconfont &#xe774;
         .base-location-text 北京市东城区景山前街4号
         span.iconfont.base-icon-enter &#xea6c;
+    Location(v-show="showLocation" @close="handleLocationClose")
 </template>
 <script type="text/ecmascript-6">
+import Location from 'common/bmap/Location'
 export default {
-  name: 'DetailBase'
+  name: 'DetailBase',
+  data () {
+    return {
+      showLocation: false
+    }
+  },
+  components: {
+    Location
+  },
+  methods: {
+    handleEnterMap () {
+      this.showLocation = true
+    },
+    handleLocationClose () {
+      this.showLocation = false
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -125,16 +143,17 @@ export default {
       padding: .2rem 0;
       line-height: .36rem;
       color: #212121;
+      flex-flow: row nowrap;
       justify-content: space-between;
-      .base-location-text{
+      .base-location-text {
         position: relative;
         margin-left: -2.5rem;
       }
-      .base-icon-enter{
+      .base-icon-enter {
         text-align: center;
         color: #9e9e9e;
       }
     }
-
   }
+
 </style>
