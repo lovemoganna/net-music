@@ -1,18 +1,26 @@
-<template lang="pug">
-  .container
-    router-link.header-abs(tag="div" to="/" v-show="showAbs")
-      .banner-back
-        span.iconfont.banner-icon-back &#xe660;
-    .header-fixed(v-show="!showAbs" :style="opacityStyle") 故宫
-      router-link.iconfont.header-fixed-back(tag="div" to="/") &#xe660;
+<template>
+  <div>
+    <router-link tag="div" to="/" class="header-abs" v-show="showAbs">
+      <div class="iconfont header-abs-back">&#xe660;</div>
+    </router-link>
+    <div class="header-fixed" v-show="!showAbs" :style="opacityStyle">
+      <router-link to="/">
+        <div class="iconfont header-fixed-back">&#xe660;</div>
+      </router-link>
+      景点详情
+    </div>
+  </div>
 </template>
-<script type="text/ecmascript-6">
+
+<script>
 export default {
   name: 'DetailHeader',
   data () {
     return {
       showAbs: true,
-      opacityStyle: 0
+      opacityStyle: {
+        opacity: 0
+      }
     }
   },
   methods: {
@@ -29,57 +37,51 @@ export default {
     }
   },
   activated () {
-    // 页面展示的时候去绑定scroll事件
     window.addEventListener('scroll', this.handleScroll)
   },
   deactivated () {
-    // 页面被隐藏的时候去解绑scroll事件
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
+
 <style lang="scss" scoped>
   @import "~styles/variables";
-
-  .banner-back {
+  .header-abs{
     position: absolute;
-    top: .1rem;
-    left: .1rem;
+    left: .2rem;
+    top: .2rem;
     width: .8rem;
     height: .8rem;
     line-height: .8rem;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.66);
     border-radius: .4rem;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    .banner-icon-back {
-      font-size: .36rem;
-      color: #ffffff;
+    text-align: center;
+    background: rgba(0, 0, 0, .8);
+    .header-abs-back{
+      color: #fff;
+      font-size: .4rem;
     }
   }
-
-  .header-fixed {
+  .header-fixed{
     position: fixed;
-    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
-    overflow: hidden;
     height: $headerHeight;
     line-height: $headerHeight;
     text-align: center;
     color: #fff;
     background: $bgColor;
-    .header-fixed-back {
+    font-size: .32rem;
+    .header-fixed-back{
       position: absolute;
       top: 0;
       left: 0;
       width: .64rem;
       text-align: center;
+      font-size: .4rem;
       color: #fff;
-      font-size: .36rem;
     }
   }
+
 </style>
