@@ -4,6 +4,7 @@
       .iconfont.city-back &#xe660;
 </template>
 <script type="text/ecmascript-6">
+
 export default {
   name: 'CityHeader'
 }
