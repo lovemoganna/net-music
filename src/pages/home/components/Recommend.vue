@@ -2,7 +2,7 @@
   .recommend-container
     .title 热销推荐
     ul
-      router-link.item.border-bottom(v-for="item of list" :keys="item.id" tag="li" :to="'./detail/'+ item.id")
+      router-link.item.border-bottom(v-for="item of list" :key="item.id" tag="li" :to="'./detail/'+ item.id")
         img.item-img(:src="item.imgURL")
         .item-info
           p.item-title {{item.title}}
