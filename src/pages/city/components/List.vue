@@ -11,7 +11,7 @@
         .button-list
           .button-wrapper(v-for="item of hot" :key="item.id" @click="handleCityClick(item.name)")
             .btn {{item.name}}
-      .area(v-for="(item , key) of cities" :key="key" :ref="key")
+      .area(v-for="(item , key) of cities" :key="key.id" :ref="key")
         .title.border-topbottom {{key}}
         ul.item-list(v-for="innerItem of item" :key="innerItem.id" @click="handleCityClick(innerItem.name)")
           li.item.border-bottom {{innerItem.name}}
@@ -29,6 +29,7 @@ export default {
   },
   computed: {
     ...mapState({
+      // 将vuex的公用数据`city`映射到这个组件的公用属性里面
       currentCity: 'city'
     })
   },
@@ -50,6 +51,7 @@ export default {
     letter () {
       if (this.letter) {
         const elem = this.$refs[this.letter][0]
+        // 只有获取特定区域的DOM元素,才能滑动一个字母对应的一段城市列表.
         this.scroll.scrollToElement(elem)
       }
     }
