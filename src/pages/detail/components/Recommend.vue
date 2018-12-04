@@ -18,13 +18,13 @@
         strong.ticket-right-sale ¥
           em.ticket-price-num 41
         em.ticket-right-btn 预定
-    .ticket-item
+    .ticket-item.border-bottom
       .ticket-left
         h6.ticket-left-title [上午场] 故宫成人票凭身份证快速入园( 淡季 )
         .ticket-left-tip
           img.tip-img(src="https://img1.qunarzz.com/piao/fusion/1804/25/792e9929973a9902.png")
           span.tip-img-text 23:59可订明日
-        .ticket-left-desc.border-bottom
+        .ticket-left-desc
           span.ticket-left-label.border
             img.ticket-left-tagicon(src="https://img1.qunarzz.com/piao/fusion/1804/b0/c3cf2897c74ecc02.png")
             span 自营
@@ -35,13 +35,13 @@
         strong.ticket-right-sale ¥
           em.ticket-price-num 41
         em.ticket-right-btn 预定
-    .ticket-item
+    .ticket-item.border-bottom
       .ticket-left
         h6.ticket-left-title [上午场] 故宫成人票凭身份证快速入园( 淡季 )
         .ticket-left-tip
           img.tip-img(src="https://img1.qunarzz.com/piao/fusion/1804/25/792e9929973a9902.png")
           span.tip-img-text 23:59可订明日
-        .ticket-left-desc.border-bottom
+        .ticket-left-desc
           span.ticket-left-label.border
             img.ticket-left-tagicon(src="https://img1.qunarzz.com/piao/fusion/1804/b0/c3cf2897c74ecc02.png")
             span 自营
@@ -110,6 +110,7 @@ export default {
             display: inline-block;
             width: .2rem;
             max-height: .32rem;
+            line-height: .32rem;
             margin-right: .04rem;
             vertical-align: 0;
           }
@@ -118,17 +119,19 @@ export default {
           }
         }
         .ticket-left-desc {
+          margin-top: .2rem;
           .ticket-left-label {
             @include common-label(#00afc7);
+            &.border::before {
+              @include border(rgba(50, 211, 212, 0.62));
+            }
             .ticket-left-tagicon {
               display: inline-block;
               width: .2rem;
               max-height: .32rem;
+              line-height: .32rem;
               margin-right: .04rem;
               vertical-align: 0;
-              &.border::before {
-                @include border(rgba(20, 49, 212, 0.62));
-              }
             }
           }
           .ticket-left-label:not(:last-child) {
