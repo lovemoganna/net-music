@@ -10,12 +10,13 @@
         span.iconfont.icon-arrow &#xe65e;
 </template>
 <script type="text/ecmascript-6">
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 export default {
   name: 'HomeHeader',
   computed: {
     // 将 city这个公用数据,映射到名字叫做city的计算属性当中
-    ...mapState(['city'])
+    ...mapState(['city']),
+    ...mapGetters(['doubleCity'])
   }
 }
 </script>
