@@ -2,7 +2,7 @@
   .base-container
     .base-info
       .base-header
-        .base-header-left
+        .base-header-left.border-right
           .base-star
             span.base-star-number 5.0
             em 分
@@ -11,7 +11,7 @@
             span.base-comment-number 334341条评论
             span.base-comment-desc 90条攻略
             span.iconfont.base-icon-enter &#xea6c;
-        .base-header-right.border-left
+        .base-header-right
           .base-right-desc
             span.base-desc 景点简介
           .base-right-open
@@ -46,14 +46,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
-  .border-left {
-    &:before {
-      border-color: #eee;
-      left: -0.36rem;
-    }
-  }
-
   .base-info {
     display: flex;
     flex-flow: column nowrap;
@@ -75,6 +67,10 @@ export default {
         position: relative;
         flex: 1;
         flex-flow: column nowrap;
+        &.border-right::before{
+          border-color: #eee;
+          right: -.15rem;
+        }
         .base-star {
           height: .5rem;
           line-height: .5rem;
