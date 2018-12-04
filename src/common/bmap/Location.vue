@@ -18,7 +18,7 @@
       createMap(){
         // 百度地图API功能
         var map = new BMap.Map("allmap");
-        map.centerAndZoom(new BMap.Point(116.404, 39.915), 15);
+        map.centerAndZoom(new BMap.Point(116.404, 39.915), 12);
         var local = new BMap.LocalSearch(map, {
           renderOptions:{map: map}
         });
@@ -33,6 +33,7 @@
 <style lang="scss" scoped>
   @import "~styles/variables";
   .poi-container {
+    overflow: hidden;
     .header-fixed {
       position: fixed;
       z-index: 100;
@@ -59,9 +60,12 @@
       position: absolute;
       top: 0;
       bottom: 0;
-      width: 100%;
       z-index: 98;
       margin: 0;
+      width: 100%;
+      height: 100%;
+      min-width:600px;
+      min-height:667px;
     }
   }
 </style>
