@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9a71139-c490-48cf-8d66-f15969ad7ebd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/net-music.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/city/components/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/city/components/List.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/city/components/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/city/components/Search.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/detail/Detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/Detail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/detail/components/Base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/components/Base.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/detail/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/detail/components/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/components/List.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/detail/components/Recommend.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/components/Recommend.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/components/Recommend.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/Recommend.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/getter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/getter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/app.46fd0d70.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-vendors.91965c54.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/iconfont.e3c28e07.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.4389b8c5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.4389b8c5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.d4cfa5e5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.d4cfa5e5.js.map" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,7 +56,7 @@
           <entry key="browserslistrc" value="1" />
           <entry key="css" value="18" />
           <entry key="editorconfig" value="1" />
-          <entry key="gitignore" value="8" />
+          <entry key="gitignore" value="10" />
           <entry key="html" value="12" />
           <entry key="ico" value="6" />
           <entry key="js" value="77" />
@@ -66,7 +71,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="18" />
-          <entry key="Git file" value="8" />
+          <entry key="Git file" value="10" />
           <entry key="HTML" value="12" />
           <entry key="Image" value="7" />
           <entry key="JSON" value="38" />
@@ -81,7 +86,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="123" />
-          <entry key="gitignore" value="17" />
+          <entry key="gitignore" value="18" />
           <entry key="html" value="90" />
           <entry key="js" value="1968" />
           <entry key="json" value="604" />
@@ -93,7 +98,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="123" />
-          <entry key="Git file" value="17" />
+          <entry key="Git file" value="18" />
           <entry key="HTML" value="90" />
           <entry key="JSON" value="604" />
           <entry key="JavaScript" value="1971" />
@@ -119,17 +124,7 @@
     <favorites_list name="net-music" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -208,14 +203,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="144" />
@@ -328,16 +315,15 @@
       <workItem from="1543565311244" duration="9721000" />
       <workItem from="1543663922235" duration="19756000" />
       <workItem from="1543753422256" duration="30729000" />
-      <workItem from="1543896611857" duration="7618000" />
+      <workItem from="1543896611857" duration="7857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305353000" />
+    <option name="totallyTimeSpent" value="305592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49582636" visible="true" weight="0.17824773" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -702,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="23">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
