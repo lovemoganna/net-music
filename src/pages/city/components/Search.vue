@@ -50,7 +50,7 @@ export default {
       if (this.timer) {
         clearTimeout(this.timer)
       }
-      setTimeout(() => {
+      this.timer = setTimeout(() => {
         const result = []
         for (let i in this.cities) {
           // 判断关键词是否在cities中
@@ -60,7 +60,7 @@ export default {
             }
           })
         }
-        // list存储包含关键词的result
+        // list存储包含存储城市关键词的result
         this.list = result
       }, 100)
     }
