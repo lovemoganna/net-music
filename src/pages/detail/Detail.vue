@@ -5,7 +5,7 @@
     detail-base
     detail-tip
     detail-recommend
-    <!--detail-list(:list="categoryList")-->
+    detail-list(:list="categoryList")
 </template>
 <script type="text/ecmascript-6">
 import DetailBanner from './components/Banner'
@@ -14,6 +14,7 @@ import DetailHeader from './components/Header'
 import DetailBase from './components/Base'
 import DetailTip from './components/Tip'
 import DetailRecommend from './components/Recommend'
+import DetailList from './components/List'
 import axios from 'axios'
 
 export default {
@@ -23,7 +24,8 @@ export default {
     DetailHeader,
     DetailBase,
     DetailTip,
-    DetailRecommend
+    DetailRecommend,
+    DetailList
   },
   data () {
     return {
