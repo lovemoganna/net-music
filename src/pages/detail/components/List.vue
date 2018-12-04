@@ -2,7 +2,7 @@
   .list-container
     .item-title.border-bottom(v-for="item in list" :key="item.id")
       span.item-title-icon
-      e {{item.title}}
+      em {{item.title}}
       .item-children(v-if="item.children")
         detail-list(:list="item.children")
 </template>
