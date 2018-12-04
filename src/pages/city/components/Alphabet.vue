@@ -1,6 +1,6 @@
 <template lang="pug">
   ul.list
-    li.item(v-for="item of letters" :key="item" :ref="item" @click="handleLetterClick" @touchstart.prevent="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd") {{item}}
+    li.item(v-for="item of letters" :key="item.id" :ref="item" @click="handleLetterClick" @touchstart.prevent="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd") {{item}}
 
 </template>
 <script type="text/ecmascript-6">
@@ -47,7 +47,7 @@ export default {
           const index = Math.floor((touchY - this.startY) / 20) // 得到当前手指滑动位置得到的字母下标
 
           if (index >= 0 && index < this.letters.length) {
-            this.$emit('change', this.letters[index])
+            this.$emit('change', this.letters[index]) // 这样父组件就知道你是滑的哪个字母触发的事件了.
           }
         }, 16)
       }
@@ -67,10 +67,11 @@ export default {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 1.68rem;
+    top: 2rem;
     right: 0;
     bottom: 0;
     width: .4rem;
+    font-size: .3rem;
     .item {
       line-height: .4rem;
       color: $bgColor;
