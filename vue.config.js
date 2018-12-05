@@ -6,22 +6,25 @@ function resolve (dir) {
 
 module.exports = {
   lintOnSave: true,
-  chainWebpack: (config) => {
+  // 设置别名
+  chainWebpack: config => {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('styles', resolve('src/assets/styles'))
       .set('common', resolve('src/common'))
-  },
-  devServer: {
-    proxy: {
-      '/api': {
-        target: 'https://hdbk.site/api/',
-        changeOrigin: true,
-        ws: true,
-        pathRewrite: {
-          '^/api': ''
-        }
-      }
-    }
   }
+  // devServer: {
+  //   // 设置代理服务器
+  //   proxy: {
+  //     '/api': {
+  //       target: 'https://hdbk.site/api/',
+  //       changeOrigin: true,
+  //       secure: false,
+  //       ws: true,
+  //       pathRewrite: {
+  //         '^/api': ''
+  //       }
+  //     }
+  //   }
+  // }
 }

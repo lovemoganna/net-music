@@ -15,7 +15,6 @@ import DetailBase from './components/Base'
 import DetailTip from './components/Tip'
 import DetailRecommend from './components/Recommend'
 import DetailList from './components/List'
-import axios from 'axios'
 
 export default {
   name: 'Detail',
@@ -37,14 +36,13 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      axios.get('api/detail', {
+      this.$axios.get('https://hdbk.site/api/detail', {
         params: {
           id: this.$route.params.id
         }
       }).then(this.getDetailInfoSuccess)
     },
     getDetailInfoSuccess (res) {
-      console.log(res)
       res = res.data
       if (res.ret && res.data) {
         const data = res.data

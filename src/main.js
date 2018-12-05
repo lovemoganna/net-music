@@ -13,6 +13,9 @@ import 'styles/reset.css'
 import 'styles/border.css'
 import 'styles/iconfont.css'
 
+import axios from 'axios'
+Vue.prototype.$axios = axios
+
 Vue.config.productionTip = false
 // 解决移动端300毫秒延迟问题.
 fastClick.attach(document.body)

@@ -12,7 +12,7 @@ import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
-import axios from 'axios'
+
 import { mapState } from 'vuex'
 
 export default {
@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('api/data?city=' + this.city)
+      this.$axios.get('https://hdbk.site/api/data?city=' + this.city)
         .then(this.getHomeInfoSuccess)
     },
     getHomeInfoSuccess (res) {

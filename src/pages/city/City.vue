@@ -10,7 +10,7 @@ import CityHeader from './components/Header'
 import CitySearch from './components/Search'
 import CityList from './components/List'
 import CityAlphabet from './components/Alphabet'
-import axios from 'axios'
+
 export default {
   name: 'City',
   components: {
@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     getInfo () {
-      axios.get('api/city')
+      this.$axios.get('https://hdbk.site/api/city')
         .then(this.handleGetCityInfoSucc)
     },
     handleGetCityInfoSucc (res) {
